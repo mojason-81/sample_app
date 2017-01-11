@@ -10,13 +10,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     # XXX: The following 'assert_select' will probably break if we
     #      change the root route.
-    assert_select 'title', "Home | #{@base_title}"
+    assert_select 'title', @base_title
   end
 
   test 'should get home' do
     get static_pages_home_url
     assert_response :success
-    assert_select 'title', "Home | #{@base_title}"
+    assert_select 'title', @base_title
   end
 
   test 'should get help' do
