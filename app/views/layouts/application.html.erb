@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--
+      note for dev on cloud9
+      url to app is: rails-tutorial-jrforce.c9users.io:8080/static_pages/home
+      to start the server: bundle exec rails s -b $IP -p $PORT
+    -->
     <title><%= full_title(yield(:title)) %></title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/rails_default' %>
+    <%= render 'layouts/shim' %>
   </head>
-
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class='container'>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>
