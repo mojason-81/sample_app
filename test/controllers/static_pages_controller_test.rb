@@ -8,8 +8,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test 'should get root' do
     get root_url
     assert_response :success
-    # XXX: The following 'assert_select' will probably break if we
-    #      change the root route.
     assert_select 'title', @base_title
   end
 
