@@ -156,6 +156,20 @@ input {
   height: auto !important;
 }
 
+.checkbox {
+  margin-top: -0.8em;
+  margin-bottom: 0.8em;
+  span {
+    margin-left: 1.7em;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
 /* miscellaneous */
 
 .debug_dump {
