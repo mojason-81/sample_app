@@ -10,6 +10,7 @@ Search for these strings to jump to the associated section.
 - forms
 - Users index
 - miscellaneous
+- microposts
 
 */
 @import 'bootstrap-sprockets';
@@ -207,3 +208,51 @@ input {
     color: $state-danger-text;
   }
 }
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0
+  li {
+    padding: 0.7em 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 0.35em;
+    padding: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 4.2em;
+    img {
+      display: block;
+      padding: 0.35em 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 4.2em;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 0.7em;
+    margin-top: 0.35em;
+  }
+}
+
+aside {
+  textarea {
+    height: 7em;
+    margin-bottom: 0.35;
+  }
+}
+
+span.picture {
+  margin-top: 0.7em;
+  input {
+    border: 0;
+  }
+}
+
